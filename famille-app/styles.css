@@ -95,7 +95,7 @@ h3 { margin-top: 0; }
   border: 1px solid rgba(255,255,255,.8);
   transform: rotate(2deg);
 }
-.phone img { width: 100%; display: block; border-radius: 28px; }
+.phone img { width: min(160px, 56%); margin: 0 auto; display: block; border-radius: 36px; }
 .phone p { margin: 18px 4px 4px; color: var(--muted); text-align: center; }
 
 .section { padding: 76px 0; }

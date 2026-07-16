@@ -6,85 +6,109 @@
   <meta name="description" content="Politique de confidentialité de l’application Ma famille.">
   <title>Politique de confidentialité — Ma famille</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
 </head>
 <body>
   <div class="shell">
     <header>
-      <a class="brand" href="./" aria-label="Accueil Ma famille"><picture><source srcset="assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="assets/logo-light.png" alt="Ma famille"></picture></a>
-      <nav aria-label="Navigation principale"><a href="./">Accueil</a><a href="assistance.html">Assistance</a><a href="mentions-legales.html">Mentions légales</a></nav>
+      <a class="brand" href="./" aria-label="Accueil Ma famille">
+        <picture>
+          <source srcset="assets/logo-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/logo-light.png" alt="Ma famille" width="180" height="62">
+        </picture>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="./">Accueil</a>
+        <a href="assistance.html">Assistance</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
     </header>
 
     <main class="page">
       <p class="eyebrow">Protection de vos informations</p>
       <h1>Politique de confidentialité</h1>
-      <p class="meta">Dernière mise à jour : 14 juillet 2026</p>
+      <p class="meta">Dernière mise à jour : 16 juillet 2026</p>
       <p class="lead">Ma famille est une application d’organisation familiale pour iPhone, iPad et Mac. Cette politique explique quelles informations peuvent être traitées, pourquoi elles le sont et comment les utilisateurs gardent le contrôle.</p>
 
-      <p class="notice"><strong>En bref :</strong> Ma famille ne comporte ni publicité, ni suivi publicitaire, ni vente de données personnelles. Les données de l’application sont enregistrées localement et, lorsque l’utilisateur active iCloud, synchronisées à l’aide des services Apple.</p>
+      <p class="notice"><strong>En bref :</strong> Ma famille ne comporte ni publicité, ni suivi publicitaire, ni vente de données personnelles. Les données sont enregistrées localement et, lorsque iCloud est actif, synchronisées via les services Apple. Les abonnements Premium sont gérés par l’App Store.</p>
 
       <h2>1. Informations traitées</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Catégorie</th><th>Exemples</th><th>Utilisation</th></tr></thead>
           <tbody>
-            <tr><td>Foyer et profils</td><td>Noms, rôles, photo de profil, date de naissance</td><td>Identifier les membres, personnaliser l’expérience et appliquer les droits d’accès.</td></tr>
+            <tr><td>Foyer et profils</td><td>Noms, rôles, photo de profil, date de naissance, droits d’accès aux modules</td><td>Identifier les membres, personnaliser l’expérience et appliquer les droits.</td></tr>
             <tr><td>Organisation familiale</td><td>Activités, agenda, tâches, courses, repas, recettes, contacts et abonnements</td><td>Fournir les fonctions demandées et les partager avec les membres autorisés.</td></tr>
-            <tr><td>Données financières</td><td>Budgets, catégories, opérations, moyens de paiement et justificatifs</td><td>Suivre le budget familial. L’application ne se connecte pas directement à un compte bancaire.</td></tr>
+            <tr><td>Données financières</td><td>Budgets, catégories, opérations, moyens de paiement et justificatifs</td><td>Suivre le budget familial. L’application ne se connecte pas à un compte bancaire.</td></tr>
             <tr><td>Informations sensibles choisies</td><td>Suivis de santé, documents, photos, factures et pièces jointes</td><td>Conserver les éléments ajoutés volontairement par l’utilisateur.</td></tr>
-            <tr><td>Communications</td><td>Messages, réactions, annonces et éléments du frigo virtuel</td><td>Permettre les échanges au sein d’un espace familial.</td></tr>
-            <tr><td>Localisation</td><td>Position actuelle ou dernière position partagée</td><td>Afficher la météo locale et, uniquement si l’utilisateur l’active, partager sa position avec les membres autorisés.</td></tr>
+            <tr><td>Communications et Moments</td><td>Messages, réactions, annonces, publications, stories et frigo virtuel</td><td>Permettre les échanges au sein d’un espace familial.</td></tr>
+            <tr><td>Localisation</td><td>Position actuelle ou dernière position partagée</td><td>Afficher la météo locale et, uniquement si l’utilisateur l’active, partager sa position.</td></tr>
             <tr><td>Jeux et médias</td><td>Réponses, scores, photos de défis et sélections musicales</td><td>Fournir les jeux familiaux et les blind tests.</td></tr>
-            <tr><td>Données techniques</td><td>Préférences d’affichage, autorisations et état de synchronisation</td><td>Faire fonctionner l’application et mémoriser les choix sur l’appareil.</td></tr>
+            <tr><td>Abonnement Premium</td><td>État d’essai ou d’abonnement (via StoreKit / App Store)</td><td>Débloquer l’écriture sur les modules Premium. Apple traite le paiement ; Ma famille ne reçoit pas vos coordonnées bancaires.</td></tr>
+            <tr><td>Données techniques</td><td>Préférences d’affichage, widgets, autorisations et état de synchronisation</td><td>Faire fonctionner l’application et mémoriser les choix sur l’appareil.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h2>2. Stockage et synchronisation iCloud</h2>
+      <h2>2. Offre gratuite et Premium</h2>
+      <p>Les modules essentiels (tableau de bord, activités, tâches, agenda, frigo, vie pratique, famille, notifications) sont utilisables sans abonnement. Les modules avancés (courses, repas, recettes, budget, documents, chat, Moments, jeux, localisation) sont consultables en gratuit ; la création et la modification de contenu peuvent nécessiter Premium (essai de 14 jours, puis abonnement mensuel ou annuel).</p>
+      <p>L’achat et la gestion de l’abonnement s’effectuent via l’App Store. Apple peut traiter les données nécessaires à la facturation selon sa propre politique de confidentialité.</p>
+
+      <h2>3. Stockage et synchronisation iCloud</h2>
       <p>Les données sont conservées dans un stockage local SwiftData. Lorsque le compte iCloud de l’appareil est disponible, elles peuvent être synchronisées au moyen d’iCloud et CloudKit dans le conteneur de l’application. Les traitements réalisés par Apple sont soumis aux conditions et à la politique de confidentialité d’Apple.</p>
       <p>Lorsqu’un espace familial est partagé, les informations de cet espace deviennent accessibles aux comptes iCloud invités, selon leurs droits. Les administrateurs du foyer peuvent notamment limiter l’accès à certains modules.</p>
 
-      <h2>3. Autorisations Apple</h2>
+      <h2>4. Autorisations Apple</h2>
       <p>L’application demande une autorisation système uniquement lorsqu’une fonction en a besoin :</p>
       <ul>
         <li><strong>Photos et fichiers :</strong> pour ajouter une photo de profil, un document, un justificatif ou une pièce jointe. Seuls les éléments sélectionnés sont traités.</li>
-        <li><strong>Localisation :</strong> pour la météo et le partage volontaire de position. L’autorisation peut être retirée dans Réglages.</li>
-        <li><strong>Notifications :</strong> pour les rappels, activités, tâches, repas, messages et informations familiales.</li>
+        <li><strong>Localisation :</strong> pour la météo et le partage volontaire de position (module Premium). L’autorisation peut être retirée dans Réglages.</li>
+        <li><strong>Notifications :</strong> pour les rappels, digests, messages et informations familiales.</li>
         <li><strong>Calendrier :</strong> lorsque l’utilisateur choisit une synchronisation avec les calendriers Apple.</li>
         <li><strong>Apple Music :</strong> pour rechercher ou lire les extraits nécessaires aux blind tests. L’accès dépend du compte Apple et des autorisations MusicKit.</li>
         <li><strong>Face ID ou Touch ID :</strong> pour verrouiller l’application. L’application reçoit uniquement le résultat de l’authentification, jamais les données biométriques.</li>
+        <li><strong>Siri / App Intents :</strong> pour les raccourcis (tâches, courses, repas, dépenses…) lorsque l’utilisateur les active.</li>
       </ul>
 
-      <h2>4. Services et contenus externes</h2>
-      <p>WeatherKit, MapKit, MusicKit, Sign in with Apple, les notifications Apple et CloudKit peuvent traiter les informations nécessaires à leur fonctionnement. Lorsqu’un utilisateur importe une recette depuis une URL, l’application contacte le site indiqué afin d’en lire les informations accessibles. Ce site peut alors recevoir les données techniques habituelles d’une connexion internet, comme l’adresse IP.</p>
+      <h2>5. Services et contenus externes</h2>
+      <p>WeatherKit, MapKit, MusicKit, Sign in with Apple, StoreKit, les notifications Apple et CloudKit peuvent traiter les informations nécessaires à leur fonctionnement. Lorsqu’un utilisateur importe une recette depuis une URL, l’application contacte le site indiqué afin d’en lire les informations accessibles. Ce site peut alors recevoir les données techniques habituelles d’une connexion internet, comme l’adresse IP.</p>
       <p>L’analyse de documents et la reconnaissance de texte utilisent autant que possible les frameworks Apple sur l’appareil. Ma famille n’intègre aucun réseau publicitaire ni outil tiers de profilage publicitaire.</p>
 
-      <h2>5. Partage des données</h2>
+      <h2>6. Partage des données</h2>
       <p>Les informations ne sont ni vendues ni louées. Elles sont partagées uniquement :</p>
       <ul>
         <li>avec les membres d’un espace familial auxquels l’utilisateur ou un administrateur a donné accès ;</li>
-        <li>avec Apple dans la mesure nécessaire au fonctionnement des services Apple utilisés ;</li>
+        <li>avec Apple dans la mesure nécessaire au fonctionnement des services Apple utilisés (y compris l’App Store pour Premium) ;</li>
         <li>avec un site externe lorsque l’utilisateur demande explicitement l’import d’un contenu depuis ce site ;</li>
         <li>si une obligation légale l’impose.</li>
       </ul>
 
-      <h2>6. Durée de conservation et suppression</h2>
-      <p>Les données restent enregistrées tant que l’utilisateur ne les supprime pas ou ne supprime pas l’espace concerné. La désinstallation retire les données locales, mais ne supprime pas nécessairement les données déjà synchronisées dans iCloud. Les données iCloud peuvent être gérées depuis l’application et les réglages iCloud du compte Apple.</p>
+      <h2>7. Export et portabilité</h2>
+      <p>Les administrateurs du foyer peuvent exporter les opérations budgétaires au format CSV depuis le module Budget. Ce fichier reprend les mêmes colonnes que l’import et peut être réimporté sans perte de données structurées. Les documents peuvent être exportés individuellement depuis leur fiche. Ces fonctions servent à la sauvegarde personnelle et au droit à la portabilité des données.</p>
+
+      <h2>8. Durée de conservation et suppression</h2>
+      <p>Les données restent enregistrées tant que l’utilisateur ne les supprime pas ou ne supprime pas l’espace concerné. La désinstallation retire les données locales, mais ne supprime pas nécessairement les données déjà synchronisées dans iCloud. Les données iCloud peuvent être gérées depuis l’application et les réglages iCloud du compte Apple. La résiliation de Premium n’efface pas automatiquement les contenus déjà créés.</p>
       <p>Un membre peut arrêter le partage de sa localisation à tout moment. Les autorisations Photos, Localisation, Calendrier, Apple Music et Notifications peuvent être modifiées dans les Réglages du système.</p>
 
-      <h2>7. Enfants et responsabilité parentale</h2>
+      <h2>9. Enfants et responsabilité parentale</h2>
       <p>Ma famille permet à un adulte de créer un profil pour un enfant et d’administrer ses droits. L’adulte responsable doit s’assurer qu’il dispose de l’autorité nécessaire avant d’ajouter des informations concernant un mineur ou d’activer un partage de localisation. Un enfant ne doit pas pouvoir accéder aux modules sensibles qui lui ont été retirés par un administrateur.</p>
 
-      <h2>8. Sécurité</h2>
+      <h2>10. Sécurité</h2>
       <p>L’application s’appuie sur les mécanismes de sécurité d’Apple, la protection de l’appareil et les contrôles d’accès de l’espace familial. Le verrouillage par Face ID ou Touch ID est facultatif. Aucun système ne peut toutefois garantir une sécurité absolue : les utilisateurs doivent protéger leur compte Apple et le code de leurs appareils.</p>
 
-      <h2>9. Vos choix</h2>
-      <p>Vous pouvez consulter, modifier ou supprimer les informations depuis les modules concernés, quitter un espace partagé, désactiver une autorisation système ou interrompre un partage de localisation. Toute question ou demande relative aux données peut être adressée à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a>.</p>
+      <h2>11. Vos choix</h2>
+      <p>Vous pouvez consulter, modifier ou supprimer les informations depuis les modules concernés, quitter un espace partagé, désactiver une autorisation système, interrompre un partage de localisation ou gérer votre abonnement via l’App Store. Toute question ou demande relative aux données peut être adressée à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a>. Dans l’app : <strong>Plus › Informations</strong>.</p>
 
-      <h2>10. Évolution de cette politique</h2>
+      <h2>12. Évolution de cette politique</h2>
       <p>Cette politique peut être mise à jour lorsque les fonctions ou les traitements évoluent. La date affichée en haut de la page permet d’identifier la version en vigueur. Une modification importante sera signalée dans l’application ou dans les informations de la version concernée.</p>
     </main>
 
-    <footer><div class="footer-row"><span>© 2026 Ma famille</span><div class="footer-links"><a href="./">Accueil</a><a href="assistance.html">Assistance</a><a href="mentions-legales.html">Mentions légales</a></div></div></footer>
+    <footer>
+      <div class="footer-row">
+        <span>© 2026 Ma famille</span>
+        <div class="footer-links"><a href="./">Accueil</a><a href="assistance.html">Assistance</a><a href="mentions-legales.html">Mentions légales</a></div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

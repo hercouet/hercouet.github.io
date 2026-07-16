@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ma famille réunit l’organisation, les courses, les repas, le budget, les documents et les échanges de votre famille dans une application Apple moderne.">
+  <meta name="description" content="Ma famille organise le quotidien familial sur iPhone, iPad et Mac : essentiels gratuits, modules Premium, synchronisation iCloud privée.">
   <meta name="theme-color" content="#6d1ee2">
   <title>Ma famille — L’organisation familiale, simplement</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
 </head>
 <body>
   <div class="shell">
@@ -14,11 +15,12 @@
       <a class="brand" href="./" aria-label="Accueil Ma famille">
         <picture>
           <source srcset="assets/logo-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="assets/logo-light.png" alt="Ma famille">
+          <img src="assets/logo-light.png" alt="Ma famille" width="180" height="62">
         </picture>
       </a>
       <nav aria-label="Navigation principale">
         <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#premium">Premium</a>
         <a href="assistance.html">Assistance</a>
         <a href="confidentialite.html">Confidentialité</a>
         <a href="mentions-legales.html">Mentions légales</a>
@@ -29,29 +31,45 @@
       <section class="hero">
         <div>
           <p class="eyebrow">Pour iPhone, iPad et Mac</p>
-          <h1>La vie de famille, enfin réunie.</h1>
-          <p class="lead">Organisez le quotidien, partagez les informations importantes et allégez la charge mentale dans un espace familial privé, synchronisé avec iCloud.</p>
+          <h1>Ma famille</h1>
+          <p class="lead">Organisez le quotidien, partagez l’essentiel et allégez la charge mentale dans un espace familial privé, synchronisé avec iCloud.</p>
           <div class="actions">
             <a class="button" href="assistance.html">Découvrir la bêta</a>
-            <a class="button secondary" href="confidentialite.html">Lire notre politique de confidentialité</a>
+            <a class="button secondary" href="#premium">Voir Premium</a>
           </div>
         </div>
         <div class="phone" aria-label="Aperçu de l’application Ma famille">
-          <img src="assets/app-icon.png" alt="Icône Ma famille">
-          <p>Une expérience native pensée pour les appareils Apple.</p>
+          <img src="assets/app-icon.png" alt="Icône Ma famille" width="120" height="120">
+          <p>Une application native Apple, avec un foyer privé synchronisé via iCloud.</p>
         </div>
       </section>
 
       <section class="section" id="fonctionnalites">
-        <p class="eyebrow">Un seul espace, plusieurs usages</p>
-        <h2>Tout ce qui fait vivre une famille</h2>
+        <p class="eyebrow">Deux niveaux, une seule app</p>
+        <h2>Les essentiels, gratuits</h2>
+        <p class="lead" style="margin-top:0;max-width:40rem">Aujourd’hui, activités, tâches, agenda, frigo, vie pratique, famille et notifications : tout ce qu’il faut pour démarrer sans abonnement.</p>
         <div class="grid">
-          <article class="card"><span class="icon">📅</span><h3>Organiser</h3><p>Agenda, activités, tâches, repas et rappels réunissent la semaine de chaque membre.</p></article>
-          <article class="card"><span class="icon">🛒</span><h3>Préparer</h3><p>Listes de courses partagées, produits courants, recettes et menus facilitent le quotidien.</p></article>
-          <article class="card"><span class="icon">💶</span><h3>Suivre</h3><p>Budget, plafonds mensuels, dépenses et justificatifs donnent une vision claire du foyer.</p></article>
-          <article class="card"><span class="icon">🔐</span><h3>Protéger</h3><p>Documents et informations sensibles restent dans l’écosystème Apple, avec Face ID en option.</p></article>
-          <article class="card"><span class="icon">💬</span><h3>Partager</h3><p>Chat, notifications et frigo virtuel gardent les messages, photos et moments importants à portée de main.</p></article>
-          <article class="card"><span class="icon">🎲</span><h3>Se retrouver</h3><p>Jeux familiaux et blind tests Apple Music créent de nouveaux moments à vivre ensemble.</p></article>
+          <article class="card"><span class="icon">☀️</span><h3>Aujourd’hui</h3><p>Le tableau de bord du foyer : rappels, repas, échéances et accès rapide aux modules.</p></article>
+          <article class="card"><span class="icon">✅</span><h3>Tâches &amp; activités</h3><p>Listes partagées, récurrences, points et agenda familial pour répartir la charge.</p></article>
+          <article class="card"><span class="icon">🧊</span><h3>Frigo &amp; vie pratique</h3><p>DLC, contacts utiles, santé, aides et abonnements du foyer au même endroit.</p></article>
+          <article class="card"><span class="icon">🔔</span><h3>Notifications</h3><p>Annonces, digests du matin et du soir, rappels d’échéances — réglables par appareil.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="premium">
+        <p class="eyebrow">Ma famille Premium</p>
+        <h2>Les modules avancés</h2>
+        <p class="lead" style="margin-top:0;max-width:42rem">Lecture possible en gratuit ; l’écriture (créer, publier, jouer, dépenser…) se débloque avec Premium. Essai gratuit de 14 jours.</p>
+        <div class="grid">
+          <article class="card"><span class="icon">🛒</span><h3>Courses &amp; repas</h3><p>Listes partagées, menus de la semaine, recettes et passage repas → courses.</p></article>
+          <article class="card"><span class="icon">💶</span><h3>Budget &amp; documents</h3><p>Dépenses, prélèvements, justificatifs et papiers importants centralisés.</p></article>
+          <article class="card"><span class="icon">💬</span><h3>Chat &amp; Moments</h3><p>Discussions familiales, photos, stories et souvenirs partagés.</p></article>
+          <article class="card"><span class="icon">🎲</span><h3>Jeux &amp; localisation</h3><p>Scrabble, Puissance 4, trivia, blind test Apple Music, et position des membres.</p></article>
+        </div>
+        <div class="card" style="margin-top:1.5rem">
+          <p class="eyebrow">Tarifs</p>
+          <h2>4,99&nbsp;€ / mois ou 39,99&nbsp;€ / an</h2>
+          <p>Essai de 14 jours inclus. Widgets Courses interactifs et raccourcis Siri font aussi partie de Premium. Gérez l’abonnement depuis Plus › Premium dans l’app, ou depuis Réglages › Abonnements sur votre appareil Apple.</p>
         </div>
       </section>
 
@@ -59,7 +77,7 @@
         <div class="card">
           <p class="eyebrow">Confidentialité dès la conception</p>
           <h2>Vos données familiales restent les vôtres.</h2>
-          <p>Ma famille n’intègre ni publicité, ni suivi publicitaire, ni revente de données. La synchronisation repose sur iCloud et CloudKit. Chaque autorisation sensible reste sous le contrôle de l’utilisateur.</p>
+          <p>Ma famille n’intègre ni publicité, ni suivi publicitaire, ni revente de données. La synchronisation repose sur iCloud et CloudKit. Les achats Premium passent par l’App Store. Chaque autorisation sensible reste sous votre contrôle.</p>
           <div class="actions"><a class="button secondary" href="confidentialite.html">Comprendre l’utilisation des données</a></div>
         </div>
       </section>
