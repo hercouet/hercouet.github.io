@@ -19,11 +19,11 @@
         </picture>
       </a>
       <nav aria-label="Navigation principale">
+        <a href="#apercu">Aperçu</a>
         <a href="#fonctionnalites">Fonctionnalités</a>
         <a href="#premium">Premium</a>
         <a href="assistance.html">Assistance</a>
         <a href="confidentialite.html">Confidentialité</a>
-        <a href="mentions-legales.html">Mentions légales</a>
       </nav>
     </header>
 
@@ -34,23 +34,57 @@
           <h1>Ma famille</h1>
           <p class="lead">Organisez le quotidien, partagez l’essentiel et allégez la charge mentale dans un espace familial privé, synchronisé avec iCloud.</p>
           <div class="actions">
-            <a class="button" href="assistance.html">Découvrir la bêta</a>
-            <a class="button secondary" href="#premium">Voir Premium</a>
+            <a class="button" href="https://testflight.apple.com/join/CaNvPM8x">Installer la bêta</a>
+            <a class="button secondary" href="assistance.html">Mode d’emploi testeur</a>
           </div>
         </div>
-        <div class="phone" aria-label="Aperçu de l’application Ma famille">
-          <img src="assets/app-icon.png" alt="Icône Ma famille" width="120" height="120">
-          <p>Une application native Apple, avec un foyer privé synchronisé via iCloud.</p>
+        <div class="phone phone-shot" aria-label="Aperçu de l’écran Aujourd’hui">
+          <img
+            class="phone-screen"
+            src="assets/screenshots/aujourdhui.jpg"
+            alt="Écran Aujourd’hui de Ma famille : tableau de bord du foyer"
+            width="390"
+            height="844"
+            loading="eager"
+          >
+        </div>
+      </section>
+
+      <section class="section" id="apercu">
+        <p class="eyebrow">Dans l’app</p>
+        <h2>Un aperçu de Ma famille</h2>
+        <p class="lead" style="margin-top:0;max-width:40rem">Quelques écrans de la version bêta : le tableau de bord, les tâches, les Moments et l’offre Premium.</p>
+        <div class="shots" role="list">
+          <figure class="shot" role="listitem">
+            <img src="assets/screenshots/aujourdhui.jpg" alt="Tableau de bord Aujourd’hui" width="390" height="844" loading="lazy">
+            <figcaption>Aujourd’hui</figcaption>
+          </figure>
+          <figure class="shot" role="listitem">
+            <img src="assets/screenshots/taches.jpg" alt="Liste des tâches familiales" width="390" height="844" loading="lazy">
+            <figcaption>Tâches</figcaption>
+          </figure>
+          <figure class="shot" role="listitem">
+            <img src="assets/screenshots/moments.jpg" alt="Module Moments partagés" width="390" height="844" loading="lazy">
+            <figcaption>Moments</figcaption>
+          </figure>
+          <figure class="shot" role="listitem">
+            <img src="assets/screenshots/decouvrir.jpg" alt="Page Découvrir Premium avec offres" width="390" height="844" loading="lazy">
+            <figcaption>Découvrir Premium</figcaption>
+          </figure>
+          <figure class="shot" role="listitem">
+            <img src="assets/screenshots/profil.jpg" alt="Édition du profil membre" width="390" height="844" loading="lazy">
+            <figcaption>Profil</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="section" id="fonctionnalites">
         <p class="eyebrow">Deux niveaux, une seule app</p>
         <h2>Les essentiels, gratuits</h2>
-        <p class="lead" style="margin-top:0;max-width:40rem">Aujourd’hui, activités, tâches, agenda, frigo, vie pratique, famille et notifications : tout ce qu’il faut pour démarrer sans abonnement.</p>
+        <p class="lead" style="margin-top:0;max-width:40rem">Aujourd’hui, activités, agenda, frigo, vie pratique, famille, notifications et jeux : tout ce qu’il faut pour démarrer sans abonnement.</p>
         <div class="grid">
           <article class="card"><span class="icon">☀️</span><h3>Aujourd’hui</h3><p>Le tableau de bord du foyer : rappels, repas, échéances et accès rapide aux modules.</p></article>
-          <article class="card"><span class="icon">✅</span><h3>Tâches &amp; activités</h3><p>Listes partagées, récurrences, points et agenda familial pour répartir la charge.</p></article>
+          <article class="card"><span class="icon">🎲</span><h3>Jeux &amp; activités</h3><p>Mini-jeux, Lettres en famille, Quatre en ligne, trivia, blind test — et l’agenda familial.</p></article>
           <article class="card"><span class="icon">🧊</span><h3>Frigo &amp; vie pratique</h3><p>Frigo virtuel (post-its, photos), contacts utiles, santé, aides et abonnements du foyer.</p></article>
           <article class="card"><span class="icon">🔔</span><h3>Notifications</h3><p>Annonces, digests du matin et du soir, rappels d’échéances — réglables par appareil.</p></article>
         </div>
@@ -59,17 +93,21 @@
       <section class="section" id="premium">
         <p class="eyebrow">Ma famille Premium</p>
         <h2>Les modules avancés</h2>
-        <p class="lead" style="margin-top:0;max-width:42rem">Lecture possible en gratuit ; l’écriture (créer, publier, jouer, dépenser…) se débloque avec Premium. Essai gratuit de 14 jours.</p>
+        <p class="lead" style="margin-top:0;max-width:42rem">Lecture possible en gratuit ; l’écriture (créer, publier, cocher, dépenser…) se débloque avec Premium. Essai gratuit de 14 jours.</p>
         <div class="grid">
+          <article class="card"><span class="icon">✅</span><h3>Tâches</h3><p>Listes partagées, échéances, rappels et suivi pour toute la famille.</p></article>
           <article class="card"><span class="icon">🛒</span><h3>Courses &amp; repas</h3><p>Listes partagées, menus de la semaine, recettes et passage repas → courses.</p></article>
           <article class="card"><span class="icon">💶</span><h3>Budget &amp; documents</h3><p>Dépenses, prélèvements, justificatifs et papiers importants centralisés.</p></article>
-          <article class="card"><span class="icon">💬</span><h3>Chat &amp; Moments</h3><p>Discussions familiales, photos, stories et souvenirs partagés.</p></article>
-          <article class="card"><span class="icon">🎲</span><h3>Jeux &amp; localisation</h3><p>Lettres en famille, Quatre en ligne, trivia, blind test Apple Music, et position des membres.</p></article>
+          <article class="card"><span class="icon">💬</span><h3>Chat, Moments &amp; localisation</h3><p>Discussions, photos, stories, souvenirs partagés et position des membres.</p></article>
         </div>
         <div class="card" style="margin-top:1.5rem">
           <p class="eyebrow">Tarifs</p>
           <h2>4,99&nbsp;€ / mois ou 39,99&nbsp;€ / an</h2>
-          <p>Essai de 14 jours inclus. Widgets Courses interactifs et raccourcis Siri font aussi partie de Premium. Gérez l’abonnement depuis Plus › Premium dans l’app, ou depuis Réglages › Abonnements sur votre appareil Apple.</p>
+          <p>Essai de 14 jours inclus. Widgets Courses interactifs et raccourcis Siri font aussi partie de Premium. Gérez l’abonnement depuis Plus › Découvrir dans l’app, ou depuis Réglages › Abonnements sur votre appareil Apple.</p>
+          <div class="actions">
+            <a class="button" href="https://testflight.apple.com/join/CaNvPM8x">Tester sur TestFlight</a>
+            <a class="button secondary" href="assistance.html">Guide testeur</a>
+          </div>
         </div>
       </section>
 
@@ -86,7 +124,12 @@
     <footer>
       <div class="footer-row">
         <span>© 2026 Ma famille</span>
-        <div class="footer-links"><a href="assistance.html">Assistance</a><a href="confidentialite.html">Confidentialité</a><a href="mentions-legales.html">Mentions légales</a></div>
+        <div class="footer-links">
+          <a href="https://testflight.apple.com/join/CaNvPM8x">TestFlight</a>
+          <a href="assistance.html">Assistance</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+        </div>
       </div>
     </footer>
   </div>

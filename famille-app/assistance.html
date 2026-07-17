@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Assistance, bêta TestFlight et aide pour l’application Ma famille.">
+  <meta name="description" content="Assistance, mode d’emploi TestFlight et aide pour l’application Ma famille.">
   <title>Assistance — Ma famille</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/app-icon.png" type="image/png">
@@ -26,33 +26,105 @@
     <main class="page">
       <p class="eyebrow">Aide et retours</p>
       <h1>Assistance</h1>
-      <p class="lead">Ma famille est actuellement distribuée en version bêta via TestFlight. Dans l’app, ouvrez <strong>Plus › Informations</strong> pour retrouver ces liens.</p>
-      <p class="notice"><strong>Besoin d’aide ?</strong> Écrivez à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a> ou utilisez « Envoyer des commentaires sur la bêta » dans TestFlight.</p>
+      <p class="lead">Ma famille est en version bêta via TestFlight. Ce guide vous explique comment installer l’app, démarrer, et tester les points les plus importants.</p>
+      <p class="notice"><strong>Lien public bêta :</strong> <a href="https://testflight.apple.com/join/CaNvPM8x">https://testflight.apple.com/join/CaNvPM8x</a><br>
+      <strong>Contact :</strong> <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a> · Dans l’app : <strong>Plus › Informations</strong></p>
+      <p>Voir aussi l’<a href="./#apercu">aperçu avec captures d’écran</a> sur la page d’accueil.</p>
 
-      <h2>Installer la version bêta</h2>
+      <h2>1. Installer la version bêta</h2>
       <ol>
-        <li>Installez l’application gratuite TestFlight depuis l’App Store.</li>
-        <li>Ouvrez l’e-mail d’invitation envoyé par Apple ou le lien transmis par l’organisateur.</li>
-        <li>Acceptez l’invitation, puis touchez « Installer » dans TestFlight.</li>
+        <li>Sur iPhone ou iPad, ouvrez le lien : <a href="https://testflight.apple.com/join/CaNvPM8x">testflight.apple.com/join/CaNvPM8x</a>.</li>
+        <li>Si besoin, installez <strong>TestFlight</strong> (gratuit) depuis l’App Store.</li>
+        <li>Acceptez l’invitation, puis touchez <strong>Installer</strong> pour Ma famille.</li>
+        <li>Dans TestFlight, visez la build <strong>0.1.0 (44)</strong> ou une version plus récente.</li>
+      </ol>
+      <p><strong>Prérequis :</strong> iOS&nbsp;18+, compte <strong>iCloud</strong> connecté sur l’appareil, connexion Internet.</p>
+
+      <h2>2. Premiers pas (5&nbsp;minutes)</h2>
+      <ol>
+        <li>Ouvrez <strong>Ma famille</strong>.</li>
+        <li>Créez un <strong>espace familial</strong> (foyer) ou rejoignez-en un via invitation / QR.</li>
+        <li>Choisissez <strong>votre profil</strong> dans le foyer.</li>
+        <li>Parcourez les onglets : <strong>Aujourd’hui</strong>, <strong>Agenda</strong>, <strong>Famille</strong>, <strong>Recherche</strong> (et <strong>Plus</strong>).</li>
+        <li>Dans <strong>Plus › Mon espace</strong>, vérifiez que iCloud / sync est actif.</li>
+      </ol>
+      <p>Conseil : testez à <strong>deux</strong> (deux comptes Apple) pour valider le partage familial.</p>
+
+      <h2>3. Scénarios prioritaires</h2>
+      <p>Merci de vérifier surtout ces parcours (correctifs récents) :</p>
+
+      <h3>Notifications</h3>
+      <ol>
+        <li>Un admin envoie une annonce.</li>
+        <li>L’autre membre la reçoit.</li>
+        <li>Ouvrez l’annonce → <strong>Supprimer</strong> (ou glisser pour supprimer).</li>
+        <li>Vérifiez que vous pouvez <strong>revenir en arrière</strong> sans blocage.</li>
+        <li>L’annonce ne doit <strong>pas réapparaître</strong> après quelques minutes ou un redémarrage de l’app.</li>
       </ol>
 
-      <h2>Demander de l’aide ou signaler un problème</h2>
-      <p>Depuis TestFlight, ouvrez la fiche de Ma famille puis choisissez « Envoyer des commentaires sur la bêta ». Joignez une capture d’écran et décrivez les étapes. Le retour part à l’adresse de suivi de l’invitation.</p>
+      <h3>Chat</h3>
+      <ol>
+        <li>Ouvrez <strong>Chat</strong>, envoyez un message.</li>
+        <li>Sur l’autre appareil / compte, le message doit arriver rapidement (quelques secondes).</li>
+        <li>Répondez dans les deux sens.</li>
+      </ol>
 
-      <h2>Premium et essai</h2>
-      <p>Les modules essentiels (Aujourd’hui, tâches, activités, agenda, frigo, vie pratique…) restent gratuits. Courses, repas, budget, documents, chat, Moments, jeux et localisation sont Premium : lecture possible en gratuit, écriture avec abonnement ou essai de 14 jours.</p>
-      <p>Gérez l’essai et l’abonnement dans l’app (<strong>Plus › Premium</strong>) ou dans Réglages › Apple ID › Abonnements. Les achats passent uniquement par l’App Store.</p>
+      <h3>Tâches (Premium / essai)</h3>
+      <ol>
+        <li>Créez une tâche, vérifiez qu’elle apparaît chez l’autre.</li>
+        <li><strong>Supprimez-la</strong>.</li>
+        <li>Attendez 1–2&nbsp;min et resynchronisez : elle ne doit <strong>pas revenir</strong>.</li>
+      </ol>
 
-      <h2>Premières vérifications</h2>
+      <h3>Localisation (Premium / essai)</h3>
+      <ol>
+        <li>Activez le partage de <strong>votre</strong> position.</li>
+        <li>Acceptez la permission Localisation si demandée.</li>
+        <li>Attendez d’avoir une position (statut du type «&nbsp;actualisée&nbsp;»).</li>
+        <li>L’autre membre doit vous voir sur la carte / la liste.</li>
+        <li>Mettez le partage en <strong>pause</strong> : vous devez disparaître côté autres.</li>
+      </ol>
+
+      <h3>Invitation familiale</h3>
+      <ol>
+        <li>Ouvrez <strong>Famille › Compte et partage</strong> (ou équivalent).</li>
+        <li>Invitez via lien / QR.</li>
+        <li>L’invité accepte et voit bien le foyer + les modules (pas une barre vide).</li>
+      </ol>
+
+      <h2>4. Autres tests utiles</h2>
       <div class="grid">
-        <article class="card"><h3>Synchronisation</h3><p>Vérifiez que vous êtes connecté à iCloud et que iCloud Drive est actif pour Ma famille.</p></article>
-        <article class="card"><h3>Notifications</h3><p>Réglages › Notifications › Ma famille, puis dans l’app Annonces / préférences d’alertes.</p></article>
-        <article class="card"><h3>Localisation</h3><p>Réglages › Confidentialité et sécurité › Service de localisation — module Premium optionnel.</p></article>
-        <article class="card"><h3>Modules verrouillés</h3><p>Si un bouton ouvre Premium, démarrez l’essai ou restaurez vos achats depuis Plus › Premium.</p></article>
+        <article class="card"><h3>Courses</h3><p>Ajouter / cocher un article et vérifier la synchronisation entre appareils.</p></article>
+        <article class="card"><h3>Agenda</h3><p>Créer un événement du jour et le retrouver sur Aujourd’hui.</p></article>
+        <article class="card"><h3>Frigo</h3><p>Laisser une note visible par la famille.</p></article>
+        <article class="card"><h3>Jeux</h3><p>Lancer une partie courte à deux (quiz, Puissance 4…).</p></article>
+        <article class="card"><h3>Synchronisation</h3><p>Vérifiez iCloud et iCloud Drive pour Ma famille ; contrôlez <strong>Plus › Mon espace</strong>.</p></article>
+        <article class="card"><h3>Notifications système</h3><p>Réglages › Notifications › Ma famille, puis les préférences dans l’app.</p></article>
       </div>
 
-      <h2>Supprimer des données</h2>
-      <p>Les éléments se suppriment depuis leurs modules. Un administrateur peut aussi réinitialiser les contenus du foyer depuis <strong>Plus › Personnaliser</strong> (la famille et les membres sont conservés). Les données iCloud peuvent subsister après désinstallation : voir la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+      <h2>5. Premium et essai</h2>
+      <p>Les modules essentiels (Aujourd’hui, activités, agenda, frigo, vie pratique, famille, notifications, jeux…) restent <strong>gratuits</strong>. Tâches, courses, repas, budget, documents, chat, Moments et localisation sont <strong>Premium</strong> : lecture possible en gratuit, écriture avec abonnement ou essai de 14&nbsp;jours.</p>
+      <p>Gérez l’essai dans l’app (<strong>Plus › Découvrir</strong>) ou dans Réglages › Apple ID › Abonnements. Les achats passent uniquement par l’App Store.</p>
+      <p><strong>Face ID / achats :</strong> si Apple demande le mot de passe plutôt que Face ID, vérifiez <strong>Réglages › Face ID et code › App Store</strong> (ce n’est pas réglable dans Ma famille).</p>
+
+      <h2>6. Signaler un bug</h2>
+      <p>Depuis TestFlight → Ma famille → <strong>Envoyer des commentaires sur la bêta</strong>, ou par e-mail à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a>. Indiquez&nbsp;:</p>
+      <ol>
+        <li>Appareil + version iOS</li>
+        <li>Build TestFlight (ex. 44)</li>
+        <li>Ce que vous faisiez (étapes)</li>
+        <li>Ce qui s’est passé / ce qui était attendu</li>
+        <li>Une <strong>capture d’écran</strong> si possible</li>
+        <li>Solo ou à deux comptes iCloud&nbsp;?</li>
+      </ol>
+
+      <h2>7. Rappels</h2>
+      <ul>
+        <li>Les données de la bêta sont <strong>réelles</strong> (iCloud) : évitez les informations trop sensibles.</li>
+        <li>Les éléments se suppriment depuis leurs modules. Un administrateur peut aussi réinitialiser les contenus du foyer depuis <strong>Plus › Personnaliser</strong> (la famille et les membres sont conservés).</li>
+        <li>Les données iCloud peuvent subsister après désinstallation : voir la <a href="confidentialite.html">politique de confidentialité</a>.</li>
+      </ul>
+      <p>Merci pour vos retours — ils aident directement à préparer la sortie App Store.</p>
     </main>
     <footer>
       <div class="footer-row">
