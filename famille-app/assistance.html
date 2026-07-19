@@ -38,7 +38,7 @@
         <li>Sur iPhone ou iPad, ouvrez le lien : <a href="https://testflight.apple.com/join/CaNvPM8x">testflight.apple.com/join/CaNvPM8x</a>.</li>
         <li>Si besoin, installez <strong>TestFlight</strong> (gratuit) depuis l’App Store.</li>
         <li>Acceptez l’invitation, puis touchez <strong>Installer</strong> pour Ma famille.</li>
-        <li>Dans TestFlight, visez la build <strong>0.1.0 (58)</strong> ou une version plus récente.</li>
+        <li>Dans TestFlight, visez la build <strong>0.1.0 (64)</strong> ou une version plus récente.</li>
       </ol>
       <p><strong>Prérequis :</strong> iOS&nbsp;18+, compte <strong>iCloud</strong> connecté sur l’appareil, connexion Internet.</p>
 
@@ -46,15 +46,15 @@
       <ol>
         <li>Ouvrez <strong>Ma famille</strong>.</li>
         <li>Créez un <strong>espace familial</strong> (foyer) ou rejoignez-en un via invitation / QR. Après réinstallation, préférez <strong>Sign in with Apple</strong> puis <strong>Rouvrir mon espace</strong> si proposé.</li>
-        <li>Choisissez <strong>votre profil</strong> dans le foyer (couleur d’identification, photo de couverture éventuelle).</li>
+        <li>Choisissez <strong>votre profil</strong> dans le foyer (couleur d’identification, photo de couverture éventuelle). En rejoignant, seuls les profils réservés à <strong>votre adresse Apple</strong> sont proposés.</li>
         <li>Parcourez les onglets : <strong>Aujourd’hui</strong>, <strong>Agenda</strong>, <strong>Famille</strong>, <strong>Recherche</strong> (et <strong>Plus</strong>).</li>
         <li>Pour revoir les astuces : <strong>Plus › Informations › Relancer le tour guidé</strong>.</li>
-        <li>Dans <strong>Plus › Mon espace</strong>, vérifiez que iCloud / sync est actif. Les retours haptiques se règlent dans <strong>Plus › Personnaliser</strong>.</li>
+        <li>Dans <strong>Plus › Mon espace</strong>, vérifiez que iCloud / sync est actif. Confidentialité widgets et Face ID : <strong>Plus › Personnaliser</strong>.</li>
       </ol>
       <p>Conseil : testez à <strong>deux</strong> (deux comptes Apple) pour valider le partage familial.</p>
 
       <h2>3. Scénarios prioritaires</h2>
-      <p>Merci de vérifier surtout ces parcours (correctifs récents, build&nbsp;58)&nbsp;:</p>
+      <p>Merci de vérifier surtout ces parcours (build&nbsp;64)&nbsp;:</p>
 
       <h3>Fluidité et synchronisation</h3>
       <ol>
@@ -72,6 +72,33 @@
       <ol>
         <li>Profil <strong>Enfant</strong> : onglets Aujourd’hui, Tâches, Activités, Jeux.</li>
         <li>Création d’un nouvel espace : choisissez une <strong>priorité</strong> (semaine, tâches, repas, enfants…).</li>
+      </ol>
+
+      <h3>Invitation et profils (2 comptes)</h3>
+      <ol>
+        <li>Admin : créez un membre avec l’<strong>e-mail Apple exact</strong> de l’invité, puis envoyez l’invitation.</li>
+        <li>Invité : seuls les profils correspondant à <strong>votre</strong> adresse doivent apparaître ; un profil admin non activé ne doit pas être réclamable.</li>
+        <li>Sans profil précréé : l’invité obtient un rôle basique (pas « Parent » automatique même s’il le choisit à l’écran).</li>
+      </ol>
+
+      <h3>Partage iCloud</h3>
+      <ol>
+        <li>Ouvrez <strong>Famille › Compte et partage</strong> (ou équivalent) et rafraîchissez / recréez le partage si besoin.</li>
+        <li>Vérifiez qu’un second compte <strong>invité nominativement</strong> rejoint bien le foyer.</li>
+        <li>Un lien partagé ne doit pas permettre à un compte non invité de rejoindre anonymement.</li>
+      </ol>
+
+      <h3>Widgets et confidentialité</h3>
+      <ol>
+        <li>Dans <strong>Plus › Personnaliser</strong>, l’option <strong>Masquer les détails sur les widgets</strong> est activée par défaut.</li>
+        <li>Avec l’option ON : les widgets / écran verrouillé affichent des libellés génériques (pas les titres personnels).</li>
+        <li>Quittez le foyer depuis un appareil : les widgets de cet appareil doivent se vider.</li>
+      </ol>
+
+      <h3>Import de recettes</h3>
+      <ol>
+        <li>Une URL en <code>http://</code> ou pointant vers une adresse locale doit être refusée.</li>
+        <li>Une URL <strong>HTTPS</strong> publique de recette doit toujours pouvoir être importée.</li>
       </ol>
 
       <h3>Aujourd’hui — couverture et titre</h3>
@@ -191,7 +218,7 @@
       <p>Depuis TestFlight → Ma famille → <strong>Envoyer des commentaires sur la bêta</strong>, ou par e-mail à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a>. Indiquez&nbsp;:</p>
       <ol>
         <li>Appareil + version iOS</li>
-        <li>Build TestFlight (ex. 58)</li>
+        <li>Build TestFlight (ex. <strong>63</strong>)</li>
         <li>Ce que vous faisiez (étapes)</li>
         <li>Ce qui s’est passé / ce qui était attendu</li>
         <li>Une <strong>capture d’écran</strong> si possible</li>
