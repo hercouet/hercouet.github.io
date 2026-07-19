@@ -38,23 +38,50 @@
         <li>Sur iPhone ou iPad, ouvrez le lien : <a href="https://testflight.apple.com/join/CaNvPM8x">testflight.apple.com/join/CaNvPM8x</a>.</li>
         <li>Si besoin, installez <strong>TestFlight</strong> (gratuit) depuis l’App Store.</li>
         <li>Acceptez l’invitation, puis touchez <strong>Installer</strong> pour Ma famille.</li>
-        <li>Dans TestFlight, visez la build <strong>0.1.0 (50)</strong> ou une version plus récente.</li>
+        <li>Dans TestFlight, visez la build <strong>0.1.0 (54)</strong> ou une version plus récente.</li>
       </ol>
       <p><strong>Prérequis :</strong> iOS&nbsp;18+, compte <strong>iCloud</strong> connecté sur l’appareil, connexion Internet.</p>
 
       <h2>2. Premiers pas (5&nbsp;minutes)</h2>
       <ol>
         <li>Ouvrez <strong>Ma famille</strong>.</li>
-        <li>Créez un <strong>espace familial</strong> (foyer) ou rejoignez-en un via invitation / QR.</li>
-        <li>Choisissez <strong>votre profil</strong> dans le foyer (et éventuellement une photo de couverture).</li>
+        <li>Créez un <strong>espace familial</strong> (foyer) ou rejoignez-en un via invitation / QR. Après réinstallation, préférez <strong>Sign in with Apple</strong> puis <strong>Rouvrir mon espace</strong> si proposé.</li>
+        <li>Choisissez <strong>votre profil</strong> dans le foyer (couleur d’identification, photo de couverture éventuelle).</li>
         <li>Parcourez les onglets : <strong>Aujourd’hui</strong>, <strong>Agenda</strong>, <strong>Famille</strong>, <strong>Recherche</strong> (et <strong>Plus</strong>).</li>
         <li>Pour revoir les astuces : <strong>Plus › Informations › Relancer le tour guidé</strong>.</li>
-        <li>Dans <strong>Plus › Mon espace</strong>, vérifiez que iCloud / sync est actif.</li>
+        <li>Dans <strong>Plus › Mon espace</strong>, vérifiez que iCloud / sync est actif. Les retours haptiques se règlent dans <strong>Plus › Personnaliser</strong>.</li>
       </ol>
       <p>Conseil : testez à <strong>deux</strong> (deux comptes Apple) pour valider le partage familial.</p>
 
       <h2>3. Scénarios prioritaires</h2>
-      <p>Merci de vérifier surtout ces parcours (correctifs récents) :</p>
+      <p>Merci de vérifier surtout ces parcours (correctifs récents, build&nbsp;54) :</p>
+
+      <h3>Onglet Plus et actions rapides</h3>
+      <ol>
+        <li>Ouvrez un module depuis <strong>Plus</strong> (ex. Jeux ou Événements).</li>
+        <li>Retapez l’onglet <strong>Plus</strong> : vous devez revenir à la page Plus (racine).</li>
+        <li>Appui long sur <strong>Plus</strong> : le menu d’actions rapides s’ouvre (si activé dans Personnaliser).</li>
+      </ol>
+
+      <h3>Chat</h3>
+      <ol>
+        <li>Ouvrez une discussion : <strong>aucune</strong> demande d’accès au micro à l’ouverture.</li>
+        <li>Envoyez un message texte, puis un partage de <strong>position</strong> (icône localisation).</li>
+        <li>Supprimez une conversation : une alerte centrée confirme l’action.</li>
+        <li>Sur l’autre appareil / compte, les messages doivent arriver rapidement.</li>
+      </ol>
+
+      <h3>Dictée</h3>
+      <ol>
+        <li>Dans un <strong>sondage</strong>, utilisez « Dicter la question » : l’app ne doit pas geler.</li>
+        <li>Dans le chat, lancez la dictée ou un message vocal : c’est à ce moment que le micro peut être demandé.</li>
+      </ol>
+
+      <h3>Jeux et Programme TV</h3>
+      <ol>
+        <li>Ouvrez Quatre en ligne, Lettres en famille ou Culture générale : bouton <strong>Aide</strong> (?) en haut à droite.</li>
+        <li>Depuis <strong>Programme TV</strong>, ouvrez une chaîne Free / OQEE si l’app est installée.</li>
+      </ol>
 
       <h3>Activités et événements</h3>
       <ol>
@@ -70,13 +97,6 @@
         <li>Ouvrez l’annonce → <strong>Supprimer</strong> (ou glisser pour supprimer).</li>
         <li>Vérifiez que vous pouvez <strong>revenir en arrière</strong> sans blocage.</li>
         <li>L’annonce ne doit <strong>pas réapparaître</strong> après quelques minutes ou un redémarrage de l’app.</li>
-      </ol>
-
-      <h3>Chat</h3>
-      <ol>
-        <li>Ouvrez <strong>Chat</strong>, envoyez un message.</li>
-        <li>Sur l’autre appareil / compte, le message doit arriver rapidement (quelques secondes).</li>
-        <li>Répondez dans les deux sens.</li>
       </ol>
 
       <h3>Tâches (Premium / essai)</h3>
@@ -107,7 +127,7 @@
         <article class="card"><h3>Courses</h3><p>Ajouter / cocher un article et vérifier la synchronisation entre appareils.</p></article>
         <article class="card"><h3>Agenda</h3><p>Créer un événement du jour et le retrouver sur Aujourd’hui.</p></article>
         <article class="card"><h3>Frigo</h3><p>Laisser une note visible par la famille.</p></article>
-        <article class="card"><h3>Jeux</h3><p>Lancer une partie courte à deux (quiz, Puissance 4…).</p></article>
+        <article class="card"><h3>Jeux</h3><p>Lancer une partie courte à deux ; consulter l’Aide de chaque jeu.</p></article>
         <article class="card"><h3>Synchronisation</h3><p>Vérifiez iCloud et iCloud Drive pour Ma famille ; contrôlez <strong>Plus › Mon espace</strong>.</p></article>
         <article class="card"><h3>Notifications système</h3><p>Réglages › Notifications › Ma famille, puis les préférences dans l’app.</p></article>
       </div>
@@ -121,7 +141,7 @@
       <p>Depuis TestFlight → Ma famille → <strong>Envoyer des commentaires sur la bêta</strong>, ou par e-mail à <a href="mailto:brice.hercouet@gmail.com">brice.hercouet@gmail.com</a>. Indiquez&nbsp;:</p>
       <ol>
         <li>Appareil + version iOS</li>
-        <li>Build TestFlight (ex. 50)</li>
+        <li>Build TestFlight (ex. 54)</li>
         <li>Ce que vous faisiez (étapes)</li>
         <li>Ce qui s’est passé / ce qui était attendu</li>
         <li>Une <strong>capture d’écran</strong> si possible</li>
