@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "description": "Source de vérité — couverture sync CloudKit CKShare (pas SwiftData natif).",
+  "recordTypes": [
+    {
+      "type": "SharedHousehold",
+      "syncService": "members",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletion": "none",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedMember",
+      "syncService": "members",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletion": "none",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedLocation",
+      "syncService": "location",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletion": "none",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedGrocery",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "grocery",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedActivity",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "activity",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedFridgeItem",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "fridgeItem",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedAnnouncement",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "announcement",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedGame",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "game",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedGameEntry",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "gameEntry",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedGameVote",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "gameVote",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedMusicQuiz",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicQuiz",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v8"
+    },
+    {
+      "type": "SharedMusicRound",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicRound",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedMusicTrack",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicTrack",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v8"
+    },
+    {
+      "type": "SharedMusicChoice",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicChoice",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v8"
+    },
+    {
+      "type": "SharedMusicAnswer",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicAnswer",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v8"
+    },
+    {
+      "type": "SharedMusicScore",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "musicScore",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v8"
+    },
+    {
+      "type": "SharedConnectFourMatch",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "connectFourMatch",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedScrabbleMatch",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "scrabbleMatch",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedScrabbleRack",
+      "syncService": "core",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingService.swift"],
+      "deletionKind": "scrabbleRack",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v3"
+    },
+    {
+      "type": "SharedFamilyTask",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "familyTask",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedPlannedMeal",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "plannedMeal",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedFamilyRecipe",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "familyRecipe",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedBudgetTransaction",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "budgetTransaction",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedBudgetCategory",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "budgetCategory",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedBudgetCategoryPlan",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "budgetCategoryPlan",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedBudgetRecurringTransaction",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "budgetRecurring",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedChatConversation",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "chatConversation",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedChatParticipant",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "chatParticipant",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedChatMessage",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "chatMessage",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedChatReaction",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "chatReaction",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedChatReadReceipt",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "chatReadReceipt",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedFamilyDocument",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "familyDocument",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedDocumentAccess",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "documentAccess",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedHealthRecord",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "healthRecord",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedUsefulContact",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "usefulContact",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedFamilyBenefit",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "familyBenefit",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    },
+    {
+      "type": "SharedHouseholdSubscription",
+      "syncService": "extended",
+      "swiftFiles": ["FamilleApp/Services/CloudSharingExtendedContentSync.swift"],
+      "deletionKind": "householdSubscription",
+      "deletion": "tombstone",
+      "requiresSchema": true,
+      "bootstrap": "v4"
+    }
+  ],
+  "modules": [
+    {
+      "id": "dashboard",
+      "title": "Aujourd'hui",
+      "status": "aggregator",
+      "notes": "Agrège modules syncés ; pas d'entité CK dédiée"
+    },
+    {
+      "id": "activities",
+      "title": "Activités",
+      "status": "synced",
+      "recordTypes": ["SharedActivity"]
+    },
+    {
+      "id": "tasks",
+      "title": "Tâches",
+      "status": "synced",
+      "recordTypes": ["SharedFamilyTask"]
+    },
+    {
+      "id": "familyLife",
+      "title": "Vie pratique",
+      "status": "partial",
+      "recordTypes": ["SharedHealthRecord", "SharedUsefulContact", "SharedFamilyBenefit", "SharedHouseholdSubscription"],
+      "localOnlyModels": ["FamilyReward", "RewardPointAdjustment", "HealthReimbursement", "FamilyHealthAttachment"]
+    },
+    {
+      "id": "shopping",
+      "title": "Courses",
+      "status": "synced",
+      "recordTypes": ["SharedGrocery"],
+      "localOnlyModels": ["GroceryProduct", "GroceryListTemplate", "GroceryListTemplateItem"]
+    },
+    {
+      "id": "meals",
+      "title": "Repas",
+      "status": "synced",
+      "recordTypes": ["SharedPlannedMeal"],
+      "localOnlyModels": ["MealMenuTemplate", "MealMenuItem"]
+    },
+    {
+      "id": "recipes",
+      "title": "Recettes",
+      "status": "synced",
+      "recordTypes": ["SharedFamilyRecipe"]
+    },
+    {
+      "id": "family",
+      "title": "Famille",
+      "status": "synced",
+      "recordTypes": ["SharedHousehold", "SharedMember"]
+    },
+    {
+      "id": "calendar",
+      "title": "Agenda",
+      "status": "aggregator",
+      "notes": "Affiche activités/tâches/repas syncés ; import EventKit local"
+    },
+    {
+      "id": "budget",
+      "title": "Budget",
+      "status": "synced",
+      "recordTypes": [
+        "SharedBudgetTransaction",
+        "SharedBudgetCategory",
+        "SharedBudgetCategoryPlan",
+        "SharedBudgetRecurringTransaction"
+      ],
+      "localOnlyModels": ["BudgetImportBatch"]
+    },
+    {
+      "id": "documents",
+      "title": "Documents",
+      "status": "synced",
+      "recordTypes": ["SharedFamilyDocument", "SharedDocumentAccess"]
+    },
+    {
+      "id": "notifications",
+      "title": "Notifications",
+      "status": "synced",
+      "recordTypes": ["SharedAnnouncement"]
+    },
+    {
+      "id": "chat",
+      "title": "Chat",
+      "status": "synced",
+      "recordTypes": [
+        "SharedChatConversation",
+        "SharedChatParticipant",
+        "SharedChatMessage",
+        "SharedChatReaction",
+        "SharedChatReadReceipt"
+      ],
+      "notes": "Chemin dédié FamilyCloudSync.syncChat + syncAllSharedData"
+    },
+    {
+      "id": "fridge",
+      "title": "Frigo virtuel",
+      "status": "synced",
+      "recordTypes": ["SharedFridgeItem"]
+    },
+    {
+      "id": "games",
+      "title": "Jeux",
+      "status": "synced",
+      "recordTypes": [
+        "SharedGame",
+        "SharedGameEntry",
+        "SharedGameVote",
+        "SharedMusicQuiz",
+        "SharedMusicRound",
+        "SharedMusicTrack",
+        "SharedMusicChoice",
+        "SharedMusicAnswer",
+        "SharedMusicScore",
+        "SharedConnectFourMatch",
+        "SharedScrabbleMatch",
+        "SharedScrabbleRack"
+      ]
+    },
+    {
+      "id": "location",
+      "title": "Localisation",
+      "status": "synced",
+      "recordTypes": ["SharedLocation"]
+    }
+  ]
+}

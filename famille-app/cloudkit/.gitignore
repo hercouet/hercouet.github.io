@@ -1,0 +1,3 @@
+# Les exports CloudKit (.ckdb) sont générés localement.
+# Ne pas committer de schéma contenant des données sensibles.
+*.ckdb
