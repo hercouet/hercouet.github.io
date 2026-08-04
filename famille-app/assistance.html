@@ -38,7 +38,7 @@
         <li>Sur iPhone ou iPad, ouvrez le lien : <a href="https://testflight.apple.com/join/CaNvPM8x">testflight.apple.com/join/CaNvPM8x</a>.</li>
         <li>Si besoin, installez <strong>TestFlight</strong> (gratuit) depuis l’App Store.</li>
         <li>Acceptez l’invitation, puis touchez <strong>Installer</strong> pour Ma famille.</li>
-        <li>Dans TestFlight, visez la build <strong>0.1.0 (83)</strong> ou une version plus récente.</li>
+        <li>Dans TestFlight, visez la build <strong>0.1.0 (84)</strong> ou une version plus récente.</li>
       </ol>
       <p><strong>Prérequis :</strong> iOS&nbsp;18+, compte <strong>iCloud</strong> connecté sur l’appareil, connexion Internet.</p>
 
@@ -54,42 +54,42 @@
       <p>Conseil : testez à <strong>deux</strong> (deux comptes Apple) pour valider le partage familial.</p>
 
       <h2>3. Scénarios prioritaires</h2>
-      <p>Merci de vérifier surtout ces parcours (build&nbsp;83)&nbsp;:</p>
+      <p>Merci de vérifier surtout ces parcours (build&nbsp;84)&nbsp;:</p>
 
-      <h3>Stabilité sync (critique)</h3>
+      <h3>Lancement &amp; sync (critique)</h3>
+      <ol>
+        <li>Ouvrez l’app, utilisez-la un peu, quittez complètement, puis <strong>rouvrez</strong> : le 2ᵉ démarrage doit être nettement plus rapide (sync delta CloudKit).</li>
+        <li>Naviguez vite entre plusieurs modules (Tâches, Famille, Courses, Localisation) : moins de latence au tap.</li>
+      </ol>
+
+      <h3>Chrome navigation &amp; haptiques</h3>
+      <ol>
+        <li>Sur une page racine (Plus, Recherche, Tâches…), scrollez : le titre remplace le logo flottant.</li>
+        <li>Depuis Agenda, ouvrez une tâche en deep-link : le titre système reste lisible.</li>
+        <li>Boutons «&nbsp;+&nbsp;» / onglets : retour haptique plus immédiat.</li>
+      </ol>
+
+      <h3>Aujourd’hui &amp; Budget</h3>
+      <ol>
+        <li>Personnalisez « Bien démarrer » et « En un coup d’œil » (ordre / visibilité).</li>
+        <li>Budget : catégories Habitation / Alimentation ne doivent plus afficher l’icône « … » par erreur.</li>
+      </ol>
+
+      <h3>Stabilité sync (revalider)</h3>
       <ol>
         <li>Sur deux appareils / comptes du même foyer : créez ou modifiez tâches, chat, jeux ou sondages.</li>
-        <li>Laissez les notifications sync arriver : l’app ne doit <strong>pas planter</strong> au retour au premier plan (correctif crash build&nbsp;82).</li>
+        <li>Laissez les notifications sync arriver : l’app ne doit <strong>pas planter</strong> au retour au premier plan.</li>
       </ol>
 
       <h3>Récolte dorée</h3>
       <ol>
         <li>Après une manche réussie : écran de confirmation puis <strong>Continuer</strong> vers la boutique.</li>
-        <li>Une suite <strong>10-V-D-R-As</strong> doit être reconnue ; le score des jokers ne dépend pas de l’ordre d’achat.</li>
+        <li>Une suite <strong>10-V-D-R-As</strong> doit être reconnue.</li>
       </ol>
 
-      <h3>Blind test</h3>
+      <h3>Localisation (Premium)</h3>
       <ol>
-        <li>Si Apple Music est autorisé : chargez les styles / lancez une partie sans crash.</li>
-      </ol>
-
-      <h3>Budget — import CSV (Premium)</h3>
-      <ol>
-        <li>En tant qu’admin, importez un CSV (idéalement un relevé long) : l’écran ne doit pas geler pendant l’analyse.</li>
-        <li>Vérifiez l’aperçu (nouvelles / doublons / invalides), confirmez l’import, puis réimportez le même fichier (idempotence).</li>
-      </ol>
-
-      <h3>Aujourd’hui — Classique &amp; Grille</h3>
-      <ol>
-        <li>Basculez Classique / Grille ; placez des widgets au-dessus et en dessous des tuiles ; scrollez sans crash.</li>
-      </ol>
-
-      <h3>Rappels (Notifications)</h3>
-      <ol>
-        <li><strong>Jardin</strong> : plante avec rappel d’arrosage.</li>
-        <li><strong>Véhicules</strong> : renseignez CT / assurance → rappel ~30&nbsp;jours avant.</li>
-        <li><strong>Cartes de fidélité</strong> : date d’expiration → rappel ~30&nbsp;jours avant.</li>
-        <li>Agenda : événement bientôt (rappel ~1&nbsp;h) ; sondage : dernière heure pour voter.</li>
+        <li>Rester sur la carte ~1&nbsp;min : positions à jour sans surchauffe / drain anormal.</li>
       </ol>
 
       <h3>Aide (i) &amp; confiance données</h3>
